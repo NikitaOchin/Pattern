@@ -33,8 +33,6 @@ namespace Lb_8
                     Console.WriteLine("Тело с масой " + mass + " и развером " + size + " является телом с номером: " + p);
                 else Console.WriteLine("Тел с такой массой и таким размером нет");
             }
-
-                Console.ReadLine();
         }
     }
     abstract class Telo
@@ -58,7 +56,7 @@ namespace Lb_8
                 if (m == mass && s == size) return n;
                 else return t.Curt(m, s);
             }
-            catch (Exception e) { return -1; }
+            catch (Exception) { return -1; }
         }
     }
 }
